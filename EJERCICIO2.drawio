@@ -1,0 +1,51 @@
+<mxfile host="app.diagrams.net" modified="2023-05-16T21:45:29.944Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="Ry3fwNMzQbfUsAfgAL77" version="21.3.2" type="device">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="1050" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pd7c96HiujZVEzwzb9_F-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="EdimIFqrXORCIEAZpclX-1" target="EdimIFqrXORCIEAZpclX-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-1" value="&amp;nbsp;VIAJES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="350" y="360" width="160" height="160" as="geometry">
+            <mxRectangle x="60" y="50" width="80" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-2" value="&lt;u&gt;+ID VIAJE(PK)&lt;br&gt;&lt;/u&gt;+MODOS DE PAGO&lt;br&gt;+TARIFAS&lt;br&gt;+VEHICULOS&lt;br&gt;+EXPERIENCIAS DE VIAJE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="EdimIFqrXORCIEAZpclX-1" vertex="1">
+          <mxGeometry y="50" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-6" value="CONDUCTORES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="80" y="10" width="160" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-7" value="&lt;u&gt;+ID CONDUCTOR (PK)&lt;br&gt;&lt;/u&gt;+NOMBRE&lt;br&gt;+APELLIDO&lt;br&gt;+TELEFONO&lt;br&gt;+CBU PARA COBRO&lt;br&gt;+N° REGISTRO&lt;br&gt;+DNI" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="EdimIFqrXORCIEAZpclX-6" vertex="1">
+          <mxGeometry y="50" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-11" value="USUARIOS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="630" y="20" width="160" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-12" value="&lt;u&gt;+ID USUARIOS (PK)&lt;br&gt;&lt;/u&gt;+NOMBRE&lt;br&gt;+APELLIDO&lt;br&gt;+TELEFONO&lt;br&gt;+TARJETA DE CREDITO&lt;br&gt;+DOMICILIO&lt;br&gt;+DNI" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="EdimIFqrXORCIEAZpclX-11" vertex="1">
+          <mxGeometry y="50" width="160" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-29" value="PEDIDO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="350" y="20" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="EdimIFqrXORCIEAZpclX-30" value="&lt;u&gt;+ID PEDIDO(PK)&lt;br&gt;&lt;/u&gt;+ID CONDUCTOR(FK)&lt;br&gt;+ID USUARIO(FK)&lt;br&gt;+ID VIAJE(FK)&lt;br&gt;+PUNTO DE INICIO&lt;br&gt;+PUNTO DE DESTINO&lt;br&gt;+PRECIO&lt;br&gt;+FORMA DE PAGO&lt;br&gt;+ELECCION DE VEHICULO&lt;br&gt;+EXPERIENCIA" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="EdimIFqrXORCIEAZpclX-29" vertex="1">
+          <mxGeometry y="30" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pd7c96HiujZVEzwzb9_F-2" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" edge="1" parent="1" source="EdimIFqrXORCIEAZpclX-30">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="530" y="170" as="sourcePoint" />
+            <mxPoint x="630" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pd7c96HiujZVEzwzb9_F-3" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;rounded=0;entryX=0.997;entryY=0.45;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EdimIFqrXORCIEAZpclX-29" target="EdimIFqrXORCIEAZpclX-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="200" y="330" as="sourcePoint" />
+            <mxPoint x="300" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,13 @@
+1 - Revisa las tablas Customers (clientes), Employees (empleados) y Orders (pedidos)
+
+2 -¿Cuántos clientes hay registrados?
+
+3 -¿Cuántos pedidos?
+
+4 - ¿Qué clientes viven en las vegas y su nombre  empieza por J?
+
+5 - ¿Cuántos clientes hay que son de las vegas?
+
+6 - ¿Cuántos clientes hay en cada ciudad?
+
+7 - ¿Cuántos pedidos se realizaron despues del 24/03/2006?
